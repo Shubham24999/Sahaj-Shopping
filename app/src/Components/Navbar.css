@@ -1,0 +1,53 @@
+.nav{
+    border: 2px solid black;
+    display: flex;
+    width: 90%;
+    position: sticky;
+    margin: auto;
+    height: 80px;
+    justify-content: space-around;
+    
+}
+
+.nav div{
+    justify-items: center;
+    padding: 20px;
+}
+
+.nav div:nth-child(1){
+    border: 1px solid red;
+    width: 80px;
+}
+.nav div:nth-child(2){
+    border: 1px solid red;
+    width: 250px;
+}
+.nav div:nth-child(3){
+    border: 1px solid red;
+    width: 20%;
+}
+.nav div:nth-child(4){
+    border: 1px solid red;
+    width: 10%;
+}
+
+.nav input{
+
+    border: 1px solid black;
+}
+
+
+.nav div:nth-child(1) img{
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+
+.logo{
+    border: 1px solid red;
+    width: 100px;
+}
+.logo img{
+    width: 100%;
+}
