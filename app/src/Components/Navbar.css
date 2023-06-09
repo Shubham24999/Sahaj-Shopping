@@ -1,10 +1,8 @@
 .nav{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
-    width: 90%;
-    position: sticky;
     margin: auto;
-    height: 80px;
+    height: 100px;
     justify-content: space-around;
     
 }
@@ -24,12 +22,19 @@
 }
 .nav div:nth-child(3){
     border: 1px solid red;
-    width: 20%;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
 }
-.nav div:nth-child(4){
+/* .nav div:nth-child(4){
     border: 1px solid red;
     width: 10%;
+} */
+
+.nav div:nth-child(3) button{
+    border: 1px solid black;
 }
+
 
 .nav input{
 
@@ -43,11 +48,40 @@
     border-radius: 50%;
 }
 
+.btn img{
+    width: 100%;
+}
+
 
 .logo{
     border: 1px solid red;
     width: 100px;
 }
-.logo img{
+/* .logo img{
     width: 100%;
+} */
+
+@media screen and (max-width:650px) {
+    .nav{
+        display: flex;
+        height: 160px;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); */
+         flex-direction: column;
+        width:90%;
+    margin:auto;
+    border: 1px solid red;
+    padding-top: 80px;
+    align-items: center;
+    }
+    .btn{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn button{
+        border: 1px solid black;
+    }
+    
 }

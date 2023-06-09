@@ -22,7 +22,9 @@ function App() {
 
   return (
     <div className='cont'>
+      <div className='navbar'>
       <Navbar />
+      </div>
       <div className="data">
       {data && <Products data={data}/>}
       </div>

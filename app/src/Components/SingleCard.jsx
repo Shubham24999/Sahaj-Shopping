@@ -25,26 +25,26 @@ const SingleCard = ({title,img,description,price,handlesize,size}) => {
         alt='Green double couch with wooden legs'
         borderRadius='lg'
         boxSize='250px'
-        border="1px solid black"
+        // border="1px solid black"
       />
       <Stack mt='6' spacing='3'>
-        <Heading size='md' border="1px solid black">{title ? title.slice(0, 35) : text}</Heading>
-        <Heading size='xs' border="1px solid black" >
+        <Heading size='md' >{title ? title.slice(0, 35) : text}</Heading>
+        <Heading size='xs'  >
           {isReadMore ? text.slice(0, 140) : text.slice(0, 200)}
       <span style={{color:"red",textDecoration:"underline",cursor:"pointer"}} onClick={toggleReadMore} className="read-or-hide">
         {isReadMore ? "...read more" : " show less"}
       </span>
         </Heading >
-        <Text color='blue.600' fontSize='sm'>
-          Rs.{price}
-        </Text>
+        {/* <Text color='blue.600' fontSize='lg'>
+          Rs.{price * 10}
+        </Text> */}
       </Stack>
     </CardBody>
     <CardFooter>
-      <ButtonGroup spacing='2'>
-        <Button variant='solid' colorScheme='blue'>
-          Buy now
-        </Button>
+      <ButtonGroup spacing='8'>
+        <Button><Text color='blue.600' fontSize='lg'>
+          Rs.{Math.trunc((price * 10))}
+        </Text></Button>
         <Button variant='solid' colorScheme='red'>
           Add to cart
         </Button>

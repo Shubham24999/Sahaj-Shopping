@@ -8,14 +8,23 @@
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: 1px solid black; */
 }
 
 
 .prod{
     /* border: 1px solid black; */
-    width: 80%;
-    height: 650px;
+    width: 90%;
+    height: 560px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid lightseagreen; */
+    border-radius: 10px;
 }
+.prod :hover{
+    transform: scale(1.01);
+}
+
 /* 
 .prod_l{
     border: 1px solid black;
@@ -33,7 +42,7 @@
     }
 
     .prod{
-        border: 1px solid black;
+        
         width: 90%;
         height: 650px;
     }
@@ -55,7 +64,7 @@
         gap: 20px;
     }
     .prod{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 80%;
         height: 600px;
     }
