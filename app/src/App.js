@@ -3,8 +3,8 @@ import './App.css';
 import Products from './Components/Products';
 import Navbar from './Components/Navbar';
 import Loading from './Loading';
-import Categorybox from "./Components/Categorybox"
-// import Login from './Components/Login';
+import Categorybox from "./Components/Categorybox";
+import Login from './Components/Login';
 
 
 
@@ -15,9 +15,12 @@ function App() {
   const [items, setItem] = useState([]);
   const [Caterogy, setcategory] = useState("");
 
+
+
   const [loginstatus, setlogstatus] = useState(false);
   const [homestatus, sethomestatus] = useState(true);
   const [loading, setloading] = useState(false)
+
 
   useEffect(() => {
     setloading(true)
@@ -30,7 +33,9 @@ function App() {
         setloading(false)
       })
       .catch((error) => {
+        setloading(true)
         throw alert(error)
+        
       })
   }, [])
 
@@ -50,18 +55,22 @@ function App() {
 
   const HomaPage = () => {
     sethomestatus(true)
+    setcategory(false)
     setItem([])
   }
 
-
+  const Canceotpverification=()=>{
+    sethomestatus(true)
+    setlogstatus(!loginstatus)
+  }
 
 
   return (
     <div className='cont'>
 
       <div className='navbar'>
-        {/* <Login /> */}
-        <Navbar HomaPage={HomaPage} changingData={changingData} />
+        {loginstatus &&<Login Canceotpverification={Canceotpverification}/>}
+        <Navbar HomaPage={HomaPage} changingData={changingData} Canceotpverification={Canceotpverification} loginstatus={loginstatus} />
       </div>
       {!loading && (homestatus ? <div className='h_img'>
         <img alt='home page' src='https://sslimages.shoppersstop.com/sys-master/root/h64/hc6/30154235609118/private-brand_Top-Banner-web_sersxr_434.jpg' /></div> : <Categorybox Caterogy={Caterogy}/>)}

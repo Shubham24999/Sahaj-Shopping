@@ -89,6 +89,7 @@ h1{
     /* border: 1px solid red; */
     width: 100px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .logo:hover{
