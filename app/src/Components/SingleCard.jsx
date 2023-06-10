@@ -4,8 +4,8 @@ import { Card,
   CardBody, CardFooter, Image, Stack, Heading, Text, Button, ButtonGroup
 } from '@chakra-ui/react'
 
-const SingleCard = ({title,img,description,price,handlesize,size}) => {
-    console.log(handlesize,size)
+const SingleCard = ({title,img,description,price,handlesize,size,rating}) => {
+    // console.log(handlesize,size)
 
 
     const text = description;
@@ -45,8 +45,8 @@ const SingleCard = ({title,img,description,price,handlesize,size}) => {
         <Button><Text color='blue.600' fontSize='lg'>
           Rs.{Math.trunc((price * 10))}
         </Text></Button>
-        <Button variant='solid' colorScheme='red'>
-          Add to cart
+        <Button variant='solid' colorScheme='red' color="black" fontSize="lg">
+          Rating:- {rating}
         </Button>
       </ButtonGroup>
     </CardFooter>

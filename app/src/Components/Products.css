@@ -32,7 +32,7 @@
     height: 650px;
 } */
 
-@media screen and (min-width: 480px) and (max-width:850px) {
+@media screen and (min-width: 600px) and (max-width:950px) {
     .prod_cont{
         display: grid;
         width: 90%;
@@ -55,7 +55,7 @@
 }
 
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 600px) {
     .prod_cont{
         display: grid;
         width: 90%;

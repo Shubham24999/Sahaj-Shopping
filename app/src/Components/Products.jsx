@@ -17,7 +17,7 @@ const Products = ({data}) => {
       {
       data.map((elm,ind)=>{
         return <div key={ind} className='prod'>
-          <SingleCard  title={elm.title} img={elm.image} size={size} description={elm.description} price={elm.price} handlesize={handlesize}/>
+          <SingleCard  title={elm.title} rating={elm.rating.rate} img={elm.image} size={size} description={elm.description} price={elm.price} handlesize={handlesize}/>
         </div>
       })
     }
