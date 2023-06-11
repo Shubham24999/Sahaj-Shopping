@@ -21,7 +21,7 @@ function App() {
   const [homestatus, sethomestatus] = useState(true);
   const [loading, setloading] = useState(false)
 
-
+  console.log(window.outerWidth)
   useEffect(() => {
     setloading(true)
     fetch("https://fakestoreapi.com/products/")

@@ -26,7 +26,7 @@ const Login = ({Canceotpverification}) => {
   console.log(username)
   return (<>
     <div className='modal-wrapper' onClick={() => Canceotpverification()}></div>
-    <div className='otp_box'>
+    <div className='log_box'>
       <div>
         <h1>WELCOME {username===""?"TO SAHAJ SHOPPING":":-"+username}</h1>
 

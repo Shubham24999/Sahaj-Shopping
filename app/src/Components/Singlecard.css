@@ -1,0 +1,19 @@
+
+.btm{
+    /* border: 1px solid black;
+     */
+     gap: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .btm{
+        display: flex;
+        flex-direction: column;
+        /* margin: 10px; */
+        justify-content: center;
+        gap: 10px;
+    }
+    
+
+    
+}

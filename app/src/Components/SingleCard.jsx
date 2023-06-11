@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Singlecard.css"
 
 import { Card, 
   CardBody, CardFooter, Image, Stack, Heading, Text, Button, ButtonGroup
@@ -41,11 +42,11 @@ const SingleCard = ({title,img,description,price,handlesize,size,rating}) => {
       </Stack>
     </CardBody>
     <CardFooter>
-      <ButtonGroup spacing='8'>
-        <Button><Text color='blue.600' fontSize='lg'>
+      <ButtonGroup className='btm' spacing={window.innerWidth<=400?"0":"4"}>
+        <Button border="2px solid black" variant='solid' color="black" fontSize="lg"><Text color='blue.600' fontSize='lg'>
           Rs.{Math.trunc((price * 10))}
         </Text></Button>
-        <Button variant='solid' colorScheme='red' color="black" fontSize="lg">
+        <Button border="2px solid black" variant='solid' colorScheme='red' color="black" fontSize="lg">
           Rating:- {rating}
         </Button>
       </ButtonGroup>
