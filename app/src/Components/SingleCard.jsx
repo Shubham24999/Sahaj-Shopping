@@ -42,7 +42,7 @@ const SingleCard = ({title,img,description,price,handlesize,size,rating}) => {
       </Stack>
     </CardBody>
     <CardFooter>
-      <ButtonGroup className='btm' spacing={window.innerWidth<=400?"0":"4"}>
+      <ButtonGroup className='btm' >
         <Button border="2px solid black" variant='solid' color="black" fontSize="lg"><Text color='blue.600' fontSize='lg'>
           Rs.{Math.trunc((price * 10))}
         </Text></Button>
