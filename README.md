@@ -17,7 +17,7 @@
 - # Women's Page
  [![2023-06-16-3.png](https://i.postimg.cc/vZbXsgNp/2023-06-16-3.png)](https://postimg.cc/nCSqKzZk)
 - # Electronics Page
- [![2023-06-16-4.png](https://i.postimg.cc/C5CDPJSd/2023-06-16-4.png)](https://postimg.cc/xNCcqvkS)
+[![2023-06-16-4.png](https://i.postimg.cc/C5CDPJSd/2023-06-16-4.png)](https://postimg.cc/xNCcqvkS)
 - # Jewelery Page
  [![2023-06-16-5.png](https://i.postimg.cc/C1kf5JZJ/2023-06-16-5.png)](https://postimg.cc/r0ypY1Nt)
 ## Tech Stack:-
