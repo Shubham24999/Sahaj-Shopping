@@ -1,6 +1,6 @@
 ## Sahaj_Shopping Website(Fetched Data From API, Filtered into based on Category, and Show them on UI  )
 
-# Deployed Link:- https://648c7b0257c93e2c2c8622c1--sunny-mermaid-f2105d.netlify.app/
+# Deployed Link:- [https://648c7b0257c93e2c2c8622c1--sunny-mermaid-f2105d.netlify.app/](https://sahaj-shopping-website.netlify.app/)
 
 1. API Data link:- https://fakestoreapi.com/products/  
 2. Login Page
